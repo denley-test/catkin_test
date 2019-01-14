@@ -1,0 +1,10 @@
+<launch>
+  <group ns="master">
+    <node name="listener" pkg="talker_listener" type="listener" args="master" output="screen"/>
+    <node name="talker" pkg="talker_listener" type="talker" args="master" output="screen"/>
+  </group>
+  <group ns="slave">
+    <node name="listener" pkg="talker_listener" type="listener" args="slave" output="screen"/>
+    <node name="talker" pkg="talker_listener" type="talker" args="slave" output="screen"/>
+  </group>
+</launch>

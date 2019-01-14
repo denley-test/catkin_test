@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ros_app:
+    build: .
+    image: denley/ros_app
+    # command: catkin_make
+    command: ["bash", "-c", "source devel/setup.bash && roslaunch talker_listener talker_listener.launch"]
+    volumes:
+      - .:/root/catkin_ws
+
+
