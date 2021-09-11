@@ -1,9 +1,9 @@
 version: "3"
 services:
-  catkin_test:
+  ros_test:
     build: .
-    image: denley/catkin_test
-    working_dir: /opt/catkin_test
-    entrypoint: /opt/catkin_test/docker-entrypoint.sh
+    image: denley/ros_test
+    working_dir: /opt/ros_test
+    entrypoint: /opt/ros_test/docker-entrypoint.sh
     volumes:
-      - .:/opt/catkin_test
+      - .:/opt/ros_test

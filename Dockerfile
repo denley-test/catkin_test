@@ -1,7 +1,7 @@
 FROM ros:kinetic
 MAINTAINER Denley Hsiao <denley@justtodo.com>
 
-ENV APP_DIR=/opt/catkin_test
+ENV APP_DIR=/opt/ros_test
 RUN mkdir -p $APP_DIR
 WORKDIR $APP_DIR
 
